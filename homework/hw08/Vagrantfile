@@ -1,0 +1,17 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+Vagrant.configure(2) do |config|
+  config.vm.box = "centos/7"
+
+  config.vm.provider "virtualbox" do |v|
+    v.memory = 256
+    v.cpus = 1
+  end
+
+  config.vm.define "hw08" do |hw8|
+    hw8.vm.network "private_network", ip: "192.168.100.10", virtualbox__intnet: "net1"
+    hw8.vm.hostname = "hw8"
+    hw8.vm.provision "shell", path: "script.sh"
+  end
+end

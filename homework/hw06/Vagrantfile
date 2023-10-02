@@ -1,0 +1,27 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+Vagrant.configure(2) do |config|
+  config.vm.box = "centos/7"
+  # Disable GuestAdditions installation
+  # config.vbguest.auto_update = false
+
+  config.vm.provider "virtualbox" do |v|
+    v.memory = 2048
+    v.cpus = 2
+  end
+
+  config.vm.define "repo" do |repo|
+    repo.vm.network "private_network", ip: "192.168.50.10", virtualbox__intnet: "net1"
+    repo.vm.hostname = "repo"
+    repo.vm.network "forwarded_port", guest: 80, host: 8080
+    repo.vm.provision "shell", path: "repo.sh"
+  end
+
+  config.vm.define "client" do |client|
+    client.vm.network "private_network", ip: "192.168.50.11", virtualbox__intnet: "net1"
+    client.vm.hostname = "client"
+    client.vm.provision "shell", path: "client.sh"
+  end
+
+end

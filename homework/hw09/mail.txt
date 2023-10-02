@@ -1,0 +1,43 @@
+Request generated: 2021-07-22 10:22:04 - 2021-07-22 10:22:25
+10 IP adrreses with the most requestes :
+93.158.167.130   had  45  requests
+109.236.252.130  had  39  requests
+212.57.117.19    had  37  requests
+188.43.241.106   had  33  requests
+87.250.233.68    had  31  requests
+62.75.198.172    had  24  requests
+148.251.223.21   had  22  requests
+185.6.8.9        had  20  requests
+217.118.66.161   had  17  requests
+95.165.18.146    had  16  requests
+-----------------------------------------------------
+10 most requested URLs:
+/                                             requested  157  times.
+/wp-login.php                                 requested  120  times.
+/xmlrpc.php                                   requested  57   times.
+/robots.txt                                   requested  26   times.
+/favicon.ico                                  requested  12   times.
+400                                           requested  11   times.
+/wp-includes/js/wp-embed.min.js?ver=5.0.4     requested  9    times.
+/wp-admin/admin-post.php?page=301bulkoptions  requested  7    times.
+/1                                            requested  7    times.
+/wp-content/uploads/2016/10/robo5.jpg         requested  6    times.
+-----------------------------------------------------
+All errors:
+404  was  51  times.
+400  was  7   times.
+499  was  2   times.
+405  was  1   times.
+403  was  1   times.
+500  was  3  times.
+-----------------------------------------------------
+HTTP statuses:
+200  was  498  times.
+301  was  95   times.
+404  was  51   times.
+400  was  7    times.
+500  was  3    times.
+499  was  2    times.
+405  was  1    times.
+403  was  1    times.
+304  was  1    times.

@@ -1,0 +1,6 @@
+---
+  - name: Install NGINX
+    hosts: hw11
+    become: yes
+    roles: 
+      - nginx

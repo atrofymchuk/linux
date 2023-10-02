@@ -1,0 +1,5 @@
+[local]
+name=local
+baseurl=http://192.168.50.10/
+gpgcheck=0
+enabled=1
